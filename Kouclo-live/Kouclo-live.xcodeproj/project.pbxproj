@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33C7906875D3957AF2820BF4 /* Pods_Kouclo_live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD54236D284B74024D4556A /* Pods_Kouclo_live.framework */; };
+		D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049D9DD1E09023400D102FD /* AppDelegate.swift */; };
+		D049D9F21E09023400D102FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D049D9EA1E09023400D102FD /* Assets.xcassets */; };
+		D049D9F31E09023400D102FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D049D9EB1E09023400D102FD /* Info.plist */; };
+		D049D9FA1E0904BB00D102FD /* KKLTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049D9F91E0904BB00D102FD /* KKLTabBarViewController.swift */; };
+		D049DA021E0905A500D102FD /* BarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049D9FD1E0905A500D102FD /* BarButtonItem+Extension.swift */; };
+		D049DA031E0905A500D102FD /* UIColor+Extrnsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049D9FE1E0905A500D102FD /* UIColor+Extrnsion.swift */; };
+		D049DA041E0905A500D102FD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049D9FF1E0905A500D102FD /* UIImage+Extension.swift */; };
+		D049DA051E0905A500D102FD /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA001E0905A500D102FD /* UIImageView+Extension.swift */; };
+		D049DA061E0905A500D102FD /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA011E0905A500D102FD /* UILable+Extension.swift */; };
+		D049DA091E0907DF00D102FD /* KKLMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA081E0907DF00D102FD /* KKLMacros.swift */; };
+		D049DA0D1E090A7B00D102FD /* KKLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA0C1E090A7B00D102FD /* KKLBaseViewController.swift */; };
+		D049DA101E090ABE00D102FD /* KKLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA0E1E090ABE00D102FD /* KKLHomeViewController.swift */; };
+		D049DA111E090ABE00D102FD /* KKLHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D049DA0F1E090ABE00D102FD /* KKLHomeViewController.xib */; };
+		D049DA141E090AE800D102FD /* KKLMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA121E090AE800D102FD /* KKLMeViewController.swift */; };
+		D049DA151E090AE800D102FD /* KKLMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D049DA131E090AE800D102FD /* KKLMeViewController.xib */; };
+		D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30FF56A66609E79D52BE7450 /* Pods-Kouclo-live.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kouclo-live.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kouclo-live/Pods-Kouclo-live.debug.xcconfig"; sourceTree = "<group>"; };
+		6052057CF815B80401D215CE /* Pods-Kouclo-live.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kouclo-live.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kouclo-live/Pods-Kouclo-live.release.xcconfig"; sourceTree = "<group>"; };
+		ACD54236D284B74024D4556A /* Pods_Kouclo_live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kouclo_live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D049D9DD1E09023400D102FD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D049D9EA1E09023400D102FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D049D9EB1E09023400D102FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D049D9F41E09034B00D102FD /* Kouclo-live-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kouclo-live-Bridging-Header.h"; sourceTree = "<group>"; };
+		D049D9F91E0904BB00D102FD /* KKLTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLTabBarViewController.swift; sourceTree = "<group>"; };
+		D049D9FD1E0905A500D102FD /* BarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		D049D9FE1E0905A500D102FD /* UIColor+Extrnsion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extrnsion.swift"; sourceTree = "<group>"; };
+		D049D9FF1E0905A500D102FD /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D049DA001E0905A500D102FD /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		D049DA011E0905A500D102FD /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
+		D049DA081E0907DF00D102FD /* KKLMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLMacros.swift; sourceTree = "<group>"; };
+		D049DA0C1E090A7B00D102FD /* KKLBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLBaseViewController.swift; sourceTree = "<group>"; };
+		D049DA0E1E090ABE00D102FD /* KKLHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHomeViewController.swift; sourceTree = "<group>"; };
+		D049DA0F1E090ABE00D102FD /* KKLHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLHomeViewController.xib; sourceTree = "<group>"; };
+		D049DA121E090AE800D102FD /* KKLMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLMeViewController.swift; sourceTree = "<group>"; };
+		D049DA131E090AE800D102FD /* KKLMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLMeViewController.xib; sourceTree = "<group>"; };
+		D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLBaseNavViewController.swift; sourceTree = "<group>"; };
+		D077B55F1E077E79009272B8 /* Kouclo-live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouclo-live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D077B55C1E077E79009272B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C7906875D3957AF2820BF4 /* Pods_Kouclo_live.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB8704BC79372F737ABF6A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD54236D284B74024D4556A /* Pods_Kouclo_live.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D049D9DC1E09023400D102FD /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9DD1E09023400D102FD /* AppDelegate.swift */,
+				D049D9F41E09034B00D102FD /* Kouclo-live-Bridging-Header.h */,
+				D049D9F81E09047E00D102FD /* Base */,
+				D049D9DE1E09023400D102FD /* Home */,
+				D049D9E31E09023400D102FD /* Me */,
+				D049D9E81E09023400D102FD /* Other */,
+				D049D9EC1E09023400D102FD /* Show */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D049D9DE1E09023400D102FD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9DF1E09023400D102FD /* Controller */,
+				D049D9E01E09023400D102FD /* Model */,
+				D049D9E11E09023400D102FD /* Tool */,
+				D049D9E21E09023400D102FD /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D049D9DF1E09023400D102FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D049DA0E1E090ABE00D102FD /* KKLHomeViewController.swift */,
+				D049DA0F1E090ABE00D102FD /* KKLHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D049D9E01E09023400D102FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D049D9E11E09023400D102FD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D049D9E21E09023400D102FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D049D9E31E09023400D102FD /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9E41E09023400D102FD /* Controller */,
+				D049D9E51E09023400D102FD /* Model */,
+				D049D9E61E09023400D102FD /* Tool */,
+				D049D9E71E09023400D102FD /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		D049D9E41E09023400D102FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D049DA121E090AE800D102FD /* KKLMeViewController.swift */,
+				D049DA131E090AE800D102FD /* KKLMeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D049D9E51E09023400D102FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D049D9E61E09023400D102FD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D049D9E71E09023400D102FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D049D9E81E09023400D102FD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D049DA071E0907AC00D102FD /* Macros */,
+				D049D9FC1E0905A500D102FD /* Extension */,
+				D049D9E91E09023400D102FD /* Supporting Files */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D049D9E91E09023400D102FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9EA1E09023400D102FD /* Assets.xcassets */,
+				D049D9EB1E09023400D102FD /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D049D9EC1E09023400D102FD /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9ED1E09023400D102FD /* Controller */,
+				D049D9EE1E09023400D102FD /* Model */,
+				D049D9EF1E09023400D102FD /* Tool */,
+				D049D9F01E09023400D102FD /* View */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		D049D9ED1E09023400D102FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D049D9EE1E09023400D102FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D049D9EF1E09023400D102FD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D049D9F01E09023400D102FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D049D9F81E09047E00D102FD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9F91E0904BB00D102FD /* KKLTabBarViewController.swift */,
+				D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */,
+				D049DA0C1E090A7B00D102FD /* KKLBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D049D9FC1E0905A500D102FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9FD1E0905A500D102FD /* BarButtonItem+Extension.swift */,
+				D049D9FE1E0905A500D102FD /* UIColor+Extrnsion.swift */,
+				D049D9FF1E0905A500D102FD /* UIImage+Extension.swift */,
+				D049DA001E0905A500D102FD /* UIImageView+Extension.swift */,
+				D049DA011E0905A500D102FD /* UILable+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D049DA071E0907AC00D102FD /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				D049DA081E0907DF00D102FD /* KKLMacros.swift */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		D077B5561E077E79009272B8 = {
+			isa = PBXGroup;
+			children = (
+				D077B5611E077E79009272B8 /* Kouclo-live */,
+				D077B5601E077E79009272B8 /* Products */,
+				FECAB3B8D75EEFA8025238CD /* Pods */,
+				CB8704BC79372F737ABF6A2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D077B5601E077E79009272B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D077B55F1E077E79009272B8 /* Kouclo-live.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D077B5611E077E79009272B8 /* Kouclo-live */ = {
+			isa = PBXGroup;
+			children = (
+				D049D9DC1E09023400D102FD /* Class */,
+			);
+			path = "Kouclo-live";
+			sourceTree = "<group>";
+		};
+		FECAB3B8D75EEFA8025238CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30FF56A66609E79D52BE7450 /* Pods-Kouclo-live.debug.xcconfig */,
+				6052057CF815B80401D215CE /* Pods-Kouclo-live.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D077B55E1E077E79009272B8 /* Kouclo-live */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D077B5711E077E79009272B8 /* Build configuration list for PBXNativeTarget "Kouclo-live" */;
+			buildPhases = (
+				4420A515C35EE4B1BF34B8E2 /* [CP] Check Pods Manifest.lock */,
+				D077B55B1E077E79009272B8 /* Sources */,
+				D077B55C1E077E79009272B8 /* Frameworks */,
+				D077B55D1E077E79009272B8 /* Resources */,
+				04D67EB30C1EB89996C87E0A /* [CP] Embed Pods Frameworks */,
+				DDFEE31D8BBA287225AB60E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kouclo-live";
+			productName = "Kouclo-live";
+			productReference = D077B55F1E077E79009272B8 /* Kouclo-live.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D077B5571E077E79009272B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KKL;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = live;
+				TargetAttributes = {
+					D077B55E1E077E79009272B8 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = G759FVJM2V;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D077B55A1E077E79009272B8 /* Build configuration list for PBXProject "Kouclo-live" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D077B5561E077E79009272B8;
+			productRefGroup = D077B5601E077E79009272B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D077B55E1E077E79009272B8 /* Kouclo-live */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D077B55D1E077E79009272B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D049D9F31E09023400D102FD /* Info.plist in Resources */,
+				D049DA111E090ABE00D102FD /* KKLHomeViewController.xib in Resources */,
+				D049D9F21E09023400D102FD /* Assets.xcassets in Resources */,
+				D049DA151E090AE800D102FD /* KKLMeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D67EB30C1EB89996C87E0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kouclo-live/Pods-Kouclo-live-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4420A515C35EE4B1BF34B8E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDFEE31D8BBA287225AB60E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kouclo-live/Pods-Kouclo-live-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D077B55B1E077E79009272B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D049DA0D1E090A7B00D102FD /* KKLBaseViewController.swift in Sources */,
+				D049DA051E0905A500D102FD /* UIImageView+Extension.swift in Sources */,
+				D049DA091E0907DF00D102FD /* KKLMacros.swift in Sources */,
+				D049DA141E090AE800D102FD /* KKLMeViewController.swift in Sources */,
+				D049DA061E0905A500D102FD /* UILable+Extension.swift in Sources */,
+				D049DA031E0905A500D102FD /* UIColor+Extrnsion.swift in Sources */,
+				D049DA101E090ABE00D102FD /* KKLHomeViewController.swift in Sources */,
+				D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */,
+				D049DA041E0905A500D102FD /* UIImage+Extension.swift in Sources */,
+				D049DA021E0905A500D102FD /* BarButtonItem+Extension.swift in Sources */,
+				D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */,
+				D049D9FA1E0904BB00D102FD /* KKLTabBarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D077B56F1E077E79009272B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D077B5701E077E79009272B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D077B5721E077E79009272B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FF56A66609E79D52BE7450 /* Pods-Kouclo-live.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G759FVJM2V;
+				INFOPLIST_FILE = "$(SRCROOT)/Kouclo-live/Class/Other/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kouclo.Kouclo-live";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kouclo-live/Class/Kouclo-live-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D077B5731E077E79009272B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6052057CF815B80401D215CE /* Pods-Kouclo-live.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G759FVJM2V;
+				INFOPLIST_FILE = "$(SRCROOT)/Kouclo-live/Class/Other/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kouclo.Kouclo-live";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kouclo-live/Class/Kouclo-live-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D077B55A1E077E79009272B8 /* Build configuration list for PBXProject "Kouclo-live" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D077B56F1E077E79009272B8 /* Debug */,
+				D077B5701E077E79009272B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D077B5711E077E79009272B8 /* Build configuration list for PBXNativeTarget "Kouclo-live" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D077B5721E077E79009272B8 /* Debug */,
+				D077B5731E077E79009272B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D077B5571E077E79009272B8 /* Project object */;
+}

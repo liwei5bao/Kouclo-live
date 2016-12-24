@@ -24,6 +24,11 @@
 		D049DA141E090AE800D102FD /* KKLMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA121E090AE800D102FD /* KKLMeViewController.swift */; };
 		D049DA151E090AE800D102FD /* KKLMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D049DA131E090AE800D102FD /* KKLMeViewController.xib */; };
 		D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */; };
+		D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */; };
+		D0B407941E0E610B003BA232 /* KKLHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407931E0E610B003BA232 /* KKLHotViewController.swift */; };
+		D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407951E0E611C003BA232 /* KKLNearViewController.swift */; };
+		D0B407981E0E611C003BA232 /* KKLNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B407961E0E611C003BA232 /* KKLNearViewController.xib */; };
+		D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		D049DA131E090AE800D102FD /* KKLMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLMeViewController.xib; sourceTree = "<group>"; };
 		D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLBaseNavViewController.swift; sourceTree = "<group>"; };
 		D077B55F1E077E79009272B8 /* Kouclo-live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouclo-live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLFocuseViewController.swift; sourceTree = "<group>"; };
+		D0B407931E0E610B003BA232 /* KKLHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHotViewController.swift; sourceTree = "<group>"; };
+		D0B407951E0E611C003BA232 /* KKLNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLNearViewController.swift; sourceTree = "<group>"; };
+		D0B407961E0E611C003BA232 /* KKLNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLNearViewController.xib; sourceTree = "<group>"; };
+		D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHomeTopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,10 @@
 			children = (
 				D049DA0E1E090ABE00D102FD /* KKLHomeViewController.swift */,
 				D049DA0F1E090ABE00D102FD /* KKLHomeViewController.xib */,
+				D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */,
+				D0B407931E0E610B003BA232 /* KKLHotViewController.swift */,
+				D0B407951E0E611C003BA232 /* KKLNearViewController.swift */,
+				D0B407961E0E611C003BA232 /* KKLNearViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +135,7 @@
 		D049D9E21E09023400D102FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B407981E0E611C003BA232 /* KKLNearViewController.xib in Resources */,
 				D049D9F31E09023400D102FD /* Info.plist in Resources */,
 				D049DA111E090ABE00D102FD /* KKLHomeViewController.xib in Resources */,
 				D049D9F21E09023400D102FD /* Assets.xcassets in Resources */,
@@ -424,8 +440,12 @@
 				D049DA031E0905A500D102FD /* UIColor+Extrnsion.swift in Sources */,
 				D049DA101E090ABE00D102FD /* KKLHomeViewController.swift in Sources */,
 				D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */,
+				D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */,
+				D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */,
 				D049DA041E0905A500D102FD /* UIImage+Extension.swift in Sources */,
 				D049DA021E0905A500D102FD /* BarButtonItem+Extension.swift in Sources */,
+				D0B407941E0E610B003BA232 /* KKLHotViewController.swift in Sources */,
+				D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */,
 				D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */,
 				D049D9FA1E0904BB00D102FD /* KKLTabBarViewController.swift in Sources */,
 			);
@@ -543,6 +563,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Kouclo-live/Class/Kouclo-live-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -561,6 +582,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Kouclo-live/Class/Kouclo-live-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

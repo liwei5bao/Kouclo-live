@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KKLHomeViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KKLHomeViewController" customModule="Kouclo_live" customModuleProvider="target">
             <connections>
+                <outlet property="contentScrollView" destination="nbM-m6-FAP" id="Ht7-mS-VCK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +16,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-m6-FAP">
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="iEG-DY-q2d"/>
+                    </connections>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nbM-m6-FAP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HnY-a0-rTc"/>
+                <constraint firstAttribute="bottom" secondItem="nbM-m6-FAP" secondAttribute="bottom" id="aJz-pd-8dW"/>
+                <constraint firstAttribute="trailing" secondItem="nbM-m6-FAP" secondAttribute="trailing" id="gTK-8t-aVU"/>
+                <constraint firstItem="nbM-m6-FAP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xra-z9-f1Q"/>
+            </constraints>
         </view>
     </objects>
 </document>

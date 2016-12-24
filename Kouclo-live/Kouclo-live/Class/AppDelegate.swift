@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        application.statusBarStyle = UIStatusBarStyle.lightContent
+        
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         let mainVC = KKLTabBarViewController()
         self.window?.rootViewController = mainVC

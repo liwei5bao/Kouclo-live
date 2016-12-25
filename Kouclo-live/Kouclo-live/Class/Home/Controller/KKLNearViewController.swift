@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KKLNearViewController: UIViewController {
+class KKLNearViewController: KKLBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

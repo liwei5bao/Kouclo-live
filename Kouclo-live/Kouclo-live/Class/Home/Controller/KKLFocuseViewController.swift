@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KKLFocuseViewController: UIViewController {
+class KKLFocuseViewController: KKLBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

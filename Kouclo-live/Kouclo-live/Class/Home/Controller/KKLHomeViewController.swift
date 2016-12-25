@@ -17,6 +17,7 @@ class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
         return array as NSArray
     }()
     
+    ///导航栏的titleView
     private lazy var topView:KKLHomeTopView = {
         let top =  KKLHomeTopView.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 50), titleNames: self.datalist)
         
@@ -37,14 +38,48 @@ class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
 
     private func setupUI(){
         self.setupNav()
+        self.setupChildVC()
     }
     
     private func setupNav(){
         self.navigationItem.titleView = topView
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "global_search"), style: UIBarButtonItemStyle.done, target: self, action: "")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "title_button_more"), style: UIBarButtonItemStyle.done, target: self, action: "")
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "global_search"), style: UIBarButtonItemStyle.done, target: nil, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "title_button_more"), style: UIBarButtonItemStyle.done, target: nil, action: nil)
     }
     
+    private func setupChildVC(){
+        let vcArray = [KKLFocuseViewController(),KKLHotViewController(),KKLNearViewController()]
+        for i in 0..<vcArray.count {
+            self.addChildViewController(vcArray[i])
+        }
+        
+        self.contentScrollView.contentSize = CGSize.init(width: KKLScreenWidth * CGFloat(vcArray.count), height: 0)
+        //展示第二个界面
+        self.contentScrollView.contentOffset = CGPoint.init(x: KKLScreenWidth, y: 0)
+        self.scrollViewDidEndScrollingAnimation(self.contentScrollView)
+    }
+    
+    //MARK:-UIScrollViewDelegate
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        let h = KKLScreenHeight - KKLNavBarHeight - KKLTabbarHeight
+        let offset = scrollView.contentOffset.x
+        // 获取索引值
+        let index = offset / KKLScreenWidth
+        //topview联动
+        self.topView.scrolling(tag: NSInteger(index))
+        //获取当前位置的VC
+        let vc = self.childViewControllers[NSInteger(index)]
+        //如果已经加载
+        if vc.isViewLoaded {return}
+        //没加载添加
+        self.view.layoutIfNeeded()
+        vc.view.frame = CGRect.init(x: offset, y: 0, width: scrollView.frame.size.width, height: h)
+        scrollView.addSubview(vc.view)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        self.scrollViewDidEndScrollingAnimation(scrollView)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

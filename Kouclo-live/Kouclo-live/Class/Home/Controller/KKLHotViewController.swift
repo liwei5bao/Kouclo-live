@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KKLHotViewController: UIViewController {
+class KKLHotViewController: KKLBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

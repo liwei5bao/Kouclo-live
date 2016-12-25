@@ -73,7 +73,7 @@ class KKLHomeTopView: UIView {
     ///首页主控制器滚动时调用
     func scrolling(tag:NSInteger){
         let btn = buttons[tag] as! UIButton
-        UIView.animate(withDuration: 0.5) { 
+        UIView.animate(withDuration: 0.25) {
             self.lineView.centerX = btn.centerX
         }
     }

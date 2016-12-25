@@ -29,6 +29,9 @@
 		D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407951E0E611C003BA232 /* KKLNearViewController.swift */; };
 		D0B407981E0E611C003BA232 /* KKLNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B407961E0E611C003BA232 /* KKLNearViewController.xib */; };
 		D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */; };
+		D0B4079E1E0F7017003BA232 /* UIImageView+SDWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4079D1E0F7017003BA232 /* UIImageView+SDWebImage.swift */; };
+		D0B407A01E0F952A003BA232 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4079F1E0F952A003BA232 /* HttpTool.swift */; };
+		D0B407A21E0FD7EE003BA232 /* KKLApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407A11E0FD7EE003BA232 /* KKLApiConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		D0B407951E0E611C003BA232 /* KKLNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLNearViewController.swift; sourceTree = "<group>"; };
 		D0B407961E0E611C003BA232 /* KKLNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLNearViewController.xib; sourceTree = "<group>"; };
 		D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHomeTopView.swift; sourceTree = "<group>"; };
+		D0B4079D1E0F7017003BA232 /* UIImageView+SDWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SDWebImage.swift"; sourceTree = "<group>"; };
+		D0B4079F1E0F952A003BA232 /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
+		D0B407A11E0FD7EE003BA232 /* KKLApiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLApiConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 			children = (
 				D049D9DD1E09023400D102FD /* AppDelegate.swift */,
 				D049D9F41E09034B00D102FD /* Kouclo-live-Bridging-Header.h */,
+				D0B4079C1E0F6ACA003BA232 /* NetWork */,
 				D049D9F81E09047E00D102FD /* Base */,
 				D049D9DE1E09023400D102FD /* Home */,
 				D049D9E31E09023400D102FD /* Me */,
@@ -257,6 +264,7 @@
 				D049D9FF1E0905A500D102FD /* UIImage+Extension.swift */,
 				D049DA001E0905A500D102FD /* UIImageView+Extension.swift */,
 				D049DA011E0905A500D102FD /* UILable+Extension.swift */,
+				D0B4079D1E0F7017003BA232 /* UIImageView+SDWebImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -293,6 +301,15 @@
 				D049D9DC1E09023400D102FD /* Class */,
 			);
 			path = "Kouclo-live";
+			sourceTree = "<group>";
+		};
+		D0B4079C1E0F6ACA003BA232 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				D0B4079F1E0F952A003BA232 /* HttpTool.swift */,
+				D0B407A11E0FD7EE003BA232 /* KKLApiConfig.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		FECAB3B8D75EEFA8025238CD /* Pods */ = {
@@ -439,6 +456,7 @@
 				D049DA061E0905A500D102FD /* UILable+Extension.swift in Sources */,
 				D049DA031E0905A500D102FD /* UIColor+Extrnsion.swift in Sources */,
 				D049DA101E090ABE00D102FD /* KKLHomeViewController.swift in Sources */,
+				D0B407A21E0FD7EE003BA232 /* KKLApiConfig.swift in Sources */,
 				D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */,
 				D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */,
 				D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */,
@@ -446,6 +464,8 @@
 				D049DA021E0905A500D102FD /* BarButtonItem+Extension.swift in Sources */,
 				D0B407941E0E610B003BA232 /* KKLHotViewController.swift in Sources */,
 				D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */,
+				D0B4079E1E0F7017003BA232 /* UIImageView+SDWebImage.swift in Sources */,
+				D0B407A01E0F952A003BA232 /* HttpTool.swift in Sources */,
 				D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */,
 				D049D9FA1E0904BB00D102FD /* KKLTabBarViewController.swift in Sources */,
 			);

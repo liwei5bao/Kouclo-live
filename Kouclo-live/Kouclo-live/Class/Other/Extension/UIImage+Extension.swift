@@ -6,10 +6,14 @@
 //  Copyright © 2016年 kouclo. All rights reserved.
 //  图片的分类
 
-import Foundation
 import UIKit
+
 ///颜色转换为图片
 extension UIImage{
+    
+
+    
+    ///创建一个颜色图片
     class func imageWithColor(_ color:UIColor)-> UIImage{
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)

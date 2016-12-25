@@ -32,6 +32,11 @@
 		D0B4079E1E0F7017003BA232 /* UIImageView+SDWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4079D1E0F7017003BA232 /* UIImageView+SDWebImage.swift */; };
 		D0B407A01E0F952A003BA232 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B4079F1E0F952A003BA232 /* HttpTool.swift */; };
 		D0B407A21E0FD7EE003BA232 /* KKLApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407A11E0FD7EE003BA232 /* KKLApiConfig.swift */; };
+		D0B407A41E0FE06A003BA232 /* MJExtensionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407A31E0FE06A003BA232 /* MJExtensionConfig.swift */; };
+		D0B407A61E0FE278003BA232 /* KKLLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407A51E0FE278003BA232 /* KKLLive.swift */; };
+		D0B407A81E0FE2AF003BA232 /* KKLCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407A71E0FE2AF003BA232 /* KKLCreator.swift */; };
+		D0B407AB1E0FE686003BA232 /* KKLHomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407AA1E0FE686003BA232 /* KKLHomeHandler.swift */; };
+		D0B407B21E0FE94E003BA232 /* KKLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B407B11E0FE94E003BA232 /* KKLLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,12 @@
 		D0B4079D1E0F7017003BA232 /* UIImageView+SDWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SDWebImage.swift"; sourceTree = "<group>"; };
 		D0B4079F1E0F952A003BA232 /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
 		D0B407A11E0FD7EE003BA232 /* KKLApiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLApiConfig.swift; sourceTree = "<group>"; };
+		D0B407A31E0FE06A003BA232 /* MJExtensionConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJExtensionConfig.swift; sourceTree = "<group>"; };
+		D0B407A51E0FE278003BA232 /* KKLLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLLive.swift; sourceTree = "<group>"; };
+		D0B407A71E0FE2AF003BA232 /* KKLCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLCreator.swift; sourceTree = "<group>"; };
+		D0B407AA1E0FE686003BA232 /* KKLHomeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHomeHandler.swift; sourceTree = "<group>"; };
+		D0B407B01E0FE94E003BA232 /* KKLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLLocationManager.h; sourceTree = "<group>"; };
+		D0B407B11E0FE94E003BA232 /* KKLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,7 @@
 		D049D9DE1E09023400D102FD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D0B407A91E0FE62D003BA232 /* Handler */,
 				D049D9DF1E09023400D102FD /* Controller */,
 				D049D9E01E09023400D102FD /* Model */,
 				D049D9E11E09023400D102FD /* Tool */,
@@ -128,6 +140,8 @@
 		D049D9E01E09023400D102FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0B407A51E0FE278003BA232 /* KKLLive.swift */,
+				D0B407A71E0FE2AF003BA232 /* KKLCreator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +205,7 @@
 		D049D9E81E09023400D102FD /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D0B407AC1E0FE83A003BA232 /* Tools */,
 				D049DA071E0907AC00D102FD /* Macros */,
 				D049D9FC1E0905A500D102FD /* Extension */,
 				D049D9E91E09023400D102FD /* Supporting Files */,
@@ -308,8 +323,26 @@
 			children = (
 				D0B4079F1E0F952A003BA232 /* HttpTool.swift */,
 				D0B407A11E0FD7EE003BA232 /* KKLApiConfig.swift */,
+				D0B407A31E0FE06A003BA232 /* MJExtensionConfig.swift */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		D0B407A91E0FE62D003BA232 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				D0B407AA1E0FE686003BA232 /* KKLHomeHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		D0B407AC1E0FE83A003BA232 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D0B407B01E0FE94E003BA232 /* KKLLocationManager.h */,
+				D0B407B11E0FE94E003BA232 /* KKLLocationManager.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		FECAB3B8D75EEFA8025238CD /* Pods */ = {
@@ -450,22 +483,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D049DA0D1E090A7B00D102FD /* KKLBaseViewController.swift in Sources */,
+				D0B407A81E0FE2AF003BA232 /* KKLCreator.swift in Sources */,
 				D049DA051E0905A500D102FD /* UIImageView+Extension.swift in Sources */,
 				D049DA091E0907DF00D102FD /* KKLMacros.swift in Sources */,
 				D049DA141E090AE800D102FD /* KKLMeViewController.swift in Sources */,
 				D049DA061E0905A500D102FD /* UILable+Extension.swift in Sources */,
 				D049DA031E0905A500D102FD /* UIColor+Extrnsion.swift in Sources */,
 				D049DA101E090ABE00D102FD /* KKLHomeViewController.swift in Sources */,
+				D0B407AB1E0FE686003BA232 /* KKLHomeHandler.swift in Sources */,
 				D0B407A21E0FD7EE003BA232 /* KKLApiConfig.swift in Sources */,
 				D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */,
 				D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */,
 				D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */,
 				D049DA041E0905A500D102FD /* UIImage+Extension.swift in Sources */,
 				D049DA021E0905A500D102FD /* BarButtonItem+Extension.swift in Sources */,
+				D0B407B21E0FE94E003BA232 /* KKLLocationManager.m in Sources */,
 				D0B407941E0E610B003BA232 /* KKLHotViewController.swift in Sources */,
 				D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */,
 				D0B4079E1E0F7017003BA232 /* UIImageView+SDWebImage.swift in Sources */,
+				D0B407A41E0FE06A003BA232 /* MJExtensionConfig.swift in Sources */,
 				D0B407A01E0F952A003BA232 /* HttpTool.swift in Sources */,
+				D0B407A61E0FE278003BA232 /* KKLLive.swift in Sources */,
 				D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */,
 				D049D9FA1E0904BB00D102FD /* KKLTabBarViewController.swift in Sources */,
 			);

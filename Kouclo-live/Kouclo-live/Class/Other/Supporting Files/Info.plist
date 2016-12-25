@@ -38,7 +38,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>如果想使用定位服务，建议开启</string>
+	<string>如果想使用定位服务，建议开启(づ￣3￣)づ╭❤～</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -13,15 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         application.statusBarStyle = UIStatusBarStyle.lightContent
-        
+    
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         let mainVC = KKLTabBarViewController()
         self.window?.rootViewController = mainVC
         self.window?.makeKeyAndVisible()
+        
+        
+        
+        KKLHomeHandler.executeGetNearLiveTaskWithSuccess(success: { (result) in
+                print(result)
+            }) { (error) in
+                print(error)
+        }
         
         return true
     }

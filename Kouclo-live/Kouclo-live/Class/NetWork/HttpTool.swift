@@ -27,6 +27,7 @@ class HttpTool: NSObject {
     class func getWithPath(path:String,params:NSDictionary,success:@escaping HttpSuccessBlock,failure:@escaping HttpFailureBlock) {
         
         let allUrl = SERVER_HOST + "/" + path
+        
         AFHttpClient.sharedClient.get(allUrl, parameters: params, progress: nil, success: { (task, responseObject) in
                 success(responseObject)
             }) { (task, error) in

@@ -37,6 +37,8 @@
 		D0B407A81E0FE2AF003BA232 /* KKLCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407A71E0FE2AF003BA232 /* KKLCreator.swift */; };
 		D0B407AB1E0FE686003BA232 /* KKLHomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407AA1E0FE686003BA232 /* KKLHomeHandler.swift */; };
 		D0B407B21E0FE94E003BA232 /* KKLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B407B11E0FE94E003BA232 /* KKLLocationManager.m */; };
+		D0ED42B01E10FDB6007A74EF /* KKLNearLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED42AE1E10FDB6007A74EF /* KKLNearLiveCell.swift */; };
+		D0ED42B11E10FDB6007A74EF /* KKLNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0ED42AF1E10FDB6007A74EF /* KKLNearLiveCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		D0B407AA1E0FE686003BA232 /* KKLHomeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHomeHandler.swift; sourceTree = "<group>"; };
 		D0B407B01E0FE94E003BA232 /* KKLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLLocationManager.h; sourceTree = "<group>"; };
 		D0B407B11E0FE94E003BA232 /* KKLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLLocationManager.m; sourceTree = "<group>"; };
+		D0ED42AE1E10FDB6007A74EF /* KKLNearLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLNearLiveCell.swift; sourceTree = "<group>"; };
+		D0ED42AF1E10FDB6007A74EF /* KKLNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLNearLiveCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */,
+				D0ED42AE1E10FDB6007A74EF /* KKLNearLiveCell.swift */,
+				D0ED42AF1E10FDB6007A74EF /* KKLNearLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0ED42B11E10FDB6007A74EF /* KKLNearLiveCell.xib in Resources */,
 				D0B407981E0E611C003BA232 /* KKLNearViewController.xib in Resources */,
 				D049D9F31E09023400D102FD /* Info.plist in Resources */,
 				D049DA111E090ABE00D102FD /* KKLHomeViewController.xib in Resources */,
@@ -501,6 +508,7 @@
 				D0B407941E0E610B003BA232 /* KKLHotViewController.swift in Sources */,
 				D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */,
 				D0B4079E1E0F7017003BA232 /* UIImageView+SDWebImage.swift in Sources */,
+				D0ED42B01E10FDB6007A74EF /* KKLNearLiveCell.swift in Sources */,
 				D0B407A41E0FE06A003BA232 /* MJExtensionConfig.swift in Sources */,
 				D0B407A01E0F952A003BA232 /* HttpTool.swift in Sources */,
 				D0B407A61E0FE278003BA232 /* KKLLive.swift in Sources */,

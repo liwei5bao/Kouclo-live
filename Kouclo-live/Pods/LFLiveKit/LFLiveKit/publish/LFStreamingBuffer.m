@@ -62,9 +62,7 @@ static const NSUInteger defaultSendBufferMaxCount = 600;///< 最大缓冲区为6
     } else {
         ///< 排序
         [self.sortList addObject:frame];
-        NSArray *sortedSendQuery = [self.sortList sortedArrayUsingFunction:frameDataCompare context:NULL];
-        [self.sortList removeAllObjects];
-        [self.sortList addObjectsFromArray:sortedSendQuery];
+		[self.sortList sortUsingFunction:frameDataCompare context:nil];
         /// 丢帧
         [self removeExpireFrame];
         /// 添加至缓冲区
@@ -100,7 +98,7 @@ static const NSUInteger defaultSendBufferMaxCount = 600;///< 最大缓冲区为6
     
     NSArray *iFrames = [self expireIFrames];///<  删除一个I帧（但一个I帧可能对应多个nal）
     self.lastDropFrames += [iFrames count];
-    if (iFrames) {
+    if (iFrames && iFrames.count > 0) {
         [self.list removeObjectsInArray:iFrames];
         return;
     }

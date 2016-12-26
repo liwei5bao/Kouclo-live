@@ -7,6 +7,7 @@
 //  首页主控制器
 
 import UIKit
+import SnapKit
 
 class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
     
@@ -34,6 +35,7 @@ class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
         super.viewDidLoad()
         
         self.setupUI()
+        
     }
 
     private func setupUI(){
@@ -61,6 +63,7 @@ class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
     
     //MARK:-UIScrollViewDelegate
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        
         let h = KKLScreenHeight - KKLNavBarHeight - KKLTabbarHeight
         let offset = scrollView.contentOffset.x
         // 获取索引值
@@ -72,9 +75,16 @@ class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
         //如果已经加载
         if vc.isViewLoaded {return}
         //没加载添加
-        self.view.layoutIfNeeded()
-        vc.view.frame = CGRect.init(x: offset, y: 0, width: scrollView.frame.size.width, height: h)
         scrollView.addSubview(vc.view)
+        
+        vc.view.snp.makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.height.equalTo(h)
+            make.left.equalTo(offset)
+            make.width.equalTo(scrollView.frame.size.width)
+        }
+        self.view.layoutIfNeeded()
+        
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

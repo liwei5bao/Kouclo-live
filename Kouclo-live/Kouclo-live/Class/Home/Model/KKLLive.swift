@@ -29,4 +29,8 @@ class KKLLive: NSObject {
     var streamAddr : String?
     var version : Int?
     
+    var distance : String?
+    
+    ///是否已经加载过了
+    var isShow : Bool = false
 }

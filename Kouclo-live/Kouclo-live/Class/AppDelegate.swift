@@ -22,14 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = mainVC
         self.window?.makeKeyAndVisible()
         
-        
-        
-        KKLHomeHandler.executeGetNearLiveTaskWithSuccess(success: { (result) in
-                print(result)
-            }) { (error) in
-                print(error)
-        }
-        
         return true
     }
 

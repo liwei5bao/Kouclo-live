@@ -28,7 +28,12 @@ class KKLHomeHandler: NSObject {
             }else{
                 
                 let lives = KKLLive.mj_objectArray(withKeyValuesArray: result["lives"])
-                success(lives)
+                if let lives = lives{
+                    success(lives)
+                }else{
+                    failure(NSError())
+                }
+                
             }
             
             }) { (error) in

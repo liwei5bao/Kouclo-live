@@ -18,3 +18,7 @@ let KKLScreenHeight = KKLScreenBounds.size.height
 let KKLNavBarHeight:CGFloat = 64
 /// tabbar的高度
 let KKLTabbarHeight:CGFloat = 49
+
+
+///placeholderImageName
+let KKLPlaceholderImageName = "default_room"

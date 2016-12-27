@@ -13,7 +13,7 @@ typealias DownloadImageSuccessBlock = (_ image:UIImage)->()
 typealias DownloadImageFailedBlock = (_ error:NSError)->()
 typealias DownloadImageProgressBlock = (_ progress:CGFloat)->()
 
-class UIImageView_SDWebImage: UIImageView {
+extension UIImageView {
 
     /**
      *  异步加载图片

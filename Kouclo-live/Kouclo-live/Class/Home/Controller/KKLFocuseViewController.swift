@@ -8,28 +8,60 @@
 
 import UIKit
 
-class KKLFocuseViewController: KKLBaseViewController {
+class KKLFocuseViewController: UITableViewController {
 
+    //
+    private var identifier = "KKLLiveCell"
+    ///模型数组
+    var datalist:NSArray = NSArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        self.setupUI()
+        self.loadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK:数据源和代理
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.datalist.count
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? KKLLiveCell
+        cell?.live = self.datalist[indexPath.row] as? KKLLive
+        return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 70 + KKLScreenWidth
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
+    //初始化控件
+    private func setupUI(){
+        
+        self.tableView.register(UINib.init(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
+        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, KKLTabbarHeight, 0)
+    }
+    
+    //初始化数据
+    private func loadData(){
+        weak var wSelf = self
+        KKLHomeHandler.executeGetHotLiveTaskWithSuccess(success: { (result) in
+            
+            wSelf?.datalist = result as! NSArray
+            wSelf?.tableView.reloadData()
+        }) { (error) in
+            print(error)
+        }
+        
+    }
 
 }

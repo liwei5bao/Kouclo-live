@@ -24,7 +24,7 @@ class HttpTool: NSObject {
      *  @param success 请求成功 返回NSDictionary或NSArray
      *  @param failure 请求失败 返回NSError
      */
-    class func getWithPath(path:String,params:NSDictionary,success:@escaping HttpSuccessBlock,failure:@escaping HttpFailureBlock) {
+    class func getWithPath(path:String,params:NSDictionary?,success:@escaping HttpSuccessBlock,failure:@escaping HttpFailureBlock) {
         
         let allUrl = SERVER_HOST + "/" + path
         

@@ -25,7 +25,6 @@
 		D049DA151E090AE800D102FD /* KKLMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D049DA131E090AE800D102FD /* KKLMeViewController.xib */; };
 		D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */; };
 		D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */; };
-		D0B407941E0E610B003BA232 /* KKLHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407931E0E610B003BA232 /* KKLHotViewController.swift */; };
 		D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407951E0E611C003BA232 /* KKLNearViewController.swift */; };
 		D0B407981E0E611C003BA232 /* KKLNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B407961E0E611C003BA232 /* KKLNearViewController.xib */; };
 		D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */; };
@@ -39,6 +38,9 @@
 		D0B407B21E0FE94E003BA232 /* KKLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B407B11E0FE94E003BA232 /* KKLLocationManager.m */; };
 		D0ED42B01E10FDB6007A74EF /* KKLNearLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED42AE1E10FDB6007A74EF /* KKLNearLiveCell.swift */; };
 		D0ED42B11E10FDB6007A74EF /* KKLNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0ED42AF1E10FDB6007A74EF /* KKLNearLiveCell.xib */; };
+		D0ED42B81E12687E007A74EF /* KKLLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED42B61E12687E007A74EF /* KKLLiveCell.swift */; };
+		D0ED42B91E12687E007A74EF /* KKLLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0ED42B71E12687E007A74EF /* KKLLiveCell.xib */; };
+		D0ED42BC1E12719F007A74EF /* KKLHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED42BA1E12719F007A74EF /* KKLHotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +66,6 @@
 		D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLBaseNavViewController.swift; sourceTree = "<group>"; };
 		D077B55F1E077E79009272B8 /* Kouclo-live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouclo-live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLFocuseViewController.swift; sourceTree = "<group>"; };
-		D0B407931E0E610B003BA232 /* KKLHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHotViewController.swift; sourceTree = "<group>"; };
 		D0B407951E0E611C003BA232 /* KKLNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLNearViewController.swift; sourceTree = "<group>"; };
 		D0B407961E0E611C003BA232 /* KKLNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLNearViewController.xib; sourceTree = "<group>"; };
 		D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHomeTopView.swift; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		D0B407B11E0FE94E003BA232 /* KKLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLLocationManager.m; sourceTree = "<group>"; };
 		D0ED42AE1E10FDB6007A74EF /* KKLNearLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLNearLiveCell.swift; sourceTree = "<group>"; };
 		D0ED42AF1E10FDB6007A74EF /* KKLNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLNearLiveCell.xib; sourceTree = "<group>"; };
+		D0ED42B61E12687E007A74EF /* KKLLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLLiveCell.swift; sourceTree = "<group>"; };
+		D0ED42B71E12687E007A74EF /* KKLLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLLiveCell.xib; sourceTree = "<group>"; };
+		D0ED42BA1E12719F007A74EF /* KKLHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +135,10 @@
 		D049D9DF1E09023400D102FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D0ED42BA1E12719F007A74EF /* KKLHotViewController.swift */,
 				D049DA0E1E090ABE00D102FD /* KKLHomeViewController.swift */,
 				D049DA0F1E090ABE00D102FD /* KKLHomeViewController.xib */,
 				D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */,
-				D0B407931E0E610B003BA232 /* KKLHotViewController.swift */,
 				D0B407951E0E611C003BA232 /* KKLNearViewController.swift */,
 				D0B407961E0E611C003BA232 /* KKLNearViewController.xib */,
 			);
@@ -163,6 +167,8 @@
 				D0B407991E0E62C5003BA232 /* KKLHomeTopView.swift */,
 				D0ED42AE1E10FDB6007A74EF /* KKLNearLiveCell.swift */,
 				D0ED42AF1E10FDB6007A74EF /* KKLNearLiveCell.xib */,
+				D0ED42B61E12687E007A74EF /* KKLLiveCell.swift */,
+				D0ED42B71E12687E007A74EF /* KKLLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -430,6 +436,7 @@
 				D049D9F31E09023400D102FD /* Info.plist in Resources */,
 				D049DA111E090ABE00D102FD /* KKLHomeViewController.xib in Resources */,
 				D049D9F21E09023400D102FD /* Assets.xcassets in Resources */,
+				D0ED42B91E12687E007A74EF /* KKLLiveCell.xib in Resources */,
 				D049DA151E090AE800D102FD /* KKLMeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,13 +507,14 @@
 				D0B407AB1E0FE686003BA232 /* KKLHomeHandler.swift in Sources */,
 				D0B407A21E0FD7EE003BA232 /* KKLApiConfig.swift in Sources */,
 				D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */,
+				D0ED42BC1E12719F007A74EF /* KKLHotViewController.swift in Sources */,
 				D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */,
 				D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */,
 				D049DA041E0905A500D102FD /* UIImage+Extension.swift in Sources */,
 				D049DA021E0905A500D102FD /* BarButtonItem+Extension.swift in Sources */,
 				D0B407B21E0FE94E003BA232 /* KKLLocationManager.m in Sources */,
-				D0B407941E0E610B003BA232 /* KKLHotViewController.swift in Sources */,
 				D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */,
+				D0ED42B81E12687E007A74EF /* KKLLiveCell.swift in Sources */,
 				D0B4079E1E0F7017003BA232 /* UIImageView+SDWebImage.swift in Sources */,
 				D0ED42B01E10FDB6007A74EF /* KKLNearLiveCell.swift in Sources */,
 				D0B407A41E0FE06A003BA232 /* MJExtensionConfig.swift in Sources */,

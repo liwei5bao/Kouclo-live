@@ -56,6 +56,7 @@ class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICo
     //初始化控件
     private func setupUI(){
         self.collectionView.register(UINib.init(nibName: "KKLNearLiveCell", bundle: nil), forCellWithReuseIdentifier: identifier)
+        self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, KKLTabbarHeight, 0)
     }
     
     //初始化数据

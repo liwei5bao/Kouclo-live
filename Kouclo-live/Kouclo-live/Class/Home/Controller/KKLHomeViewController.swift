@@ -64,7 +64,7 @@ class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
     //MARK:-UIScrollViewDelegate
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         
-        let h = KKLScreenHeight - KKLNavBarHeight - KKLTabbarHeight
+        let h = KKLScreenHeight - KKLNavBarHeight
         let offset = scrollView.contentOffset.x
         // 获取索引值
         let index = offset / KKLScreenWidth
@@ -81,7 +81,7 @@ class KKLHomeViewController: KKLBaseViewController,UIScrollViewDelegate {
             make.top.equalTo(0)
             make.height.equalTo(h)
             make.left.equalTo(offset)
-            make.width.equalTo(scrollView.frame.size.width)
+            make.width.equalTo(KKLScreenWidth)
         }
         self.view.layoutIfNeeded()
         

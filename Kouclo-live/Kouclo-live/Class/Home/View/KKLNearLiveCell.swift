@@ -18,8 +18,9 @@ class KKLNearLiveCell: UICollectionViewCell {
             
             let imageUrl = IMAGE_HOST + (live?.creator?.portrait)!
             self.headerView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
-            
-            self.detailLable.text = live?.distance
+            if let distance = live?.distance{
+                self.detailLable.text = distance
+            }
         }
     }
     

@@ -22,3 +22,5 @@ let KKLTabbarHeight:CGFloat = 49
 
 ///placeholderImageName
 let KKLPlaceholderImageName = "default_room"
+
+

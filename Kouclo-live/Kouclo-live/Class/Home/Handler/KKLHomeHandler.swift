@@ -14,6 +14,33 @@ typealias FailedBlock = (_ json:Any)->()
 
 class KKLHomeHandler: NSObject {
 
+    ///获取最热的直播
+    class func executeGetHotLiveTaskWithSuccess(success:@escaping SuccessBlock,failure:@escaping FailedBlock){
+        
+        HttpTool.getWithPath(path: API_HotLive, params: nil, success: { (json) in
+            let result = json as! NSDictionary
+            if((result["dm_error"] as? NSInteger) != 0){
+                
+                failure(json)
+                
+            }else{
+                
+                let lives = KKLLive.mj_objectArray(withKeyValuesArray: result["lives"])
+                if let lives = lives{
+                    success(lives)
+                }else{
+                    failure(NSError())
+                }
+                
+            }
+            
+        }) { (error) in
+            
+            failure(error)
+        }
+        
+    }
+    
     ///获取附近的直播
     class func executeGetNearLiveTaskWithSuccess(success:@escaping SuccessBlock,failure:@escaping FailedBlock){
         

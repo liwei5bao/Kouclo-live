@@ -44,9 +44,16 @@ class KKLHomeHandler: NSObject {
     ///获取附近的直播
     class func executeGetNearLiveTaskWithSuccess(success:@escaping SuccessBlock,failure:@escaping FailedBlock){
         
-        let params = ["uid":"85149891","latitude":"40.090562","longitude":"116.413353"]
-    
-        HttpTool.getWithPath(path: API_NearLive, params: params as NSDictionary, success: { (json) in
+        var params:NSDictionary?
+        
+        let userModel = UserUtil.getUserModel()
+        if let lat = userModel.lat,let lon = userModel.lon{
+            params = ["uid":"85149891","latitude":lat,"longitude":lon]
+        }else{
+            params = ["uid":"85149891","latitude":"40.090562","longitude":"116.413353"]
+        }
+        
+        HttpTool.getWithPath(path: API_NearLive, params: params, success: { (json) in
             let result = json as! NSDictionary
             if((result["dm_error"] as? NSInteger) != 0){
                 

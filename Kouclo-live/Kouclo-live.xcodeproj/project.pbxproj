@@ -41,6 +41,7 @@
 		D0ED42B81E12687E007A74EF /* KKLLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED42B61E12687E007A74EF /* KKLLiveCell.swift */; };
 		D0ED42B91E12687E007A74EF /* KKLLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0ED42B71E12687E007A74EF /* KKLLiveCell.xib */; };
 		D0ED42BC1E12719F007A74EF /* KKLHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED42BA1E12719F007A74EF /* KKLHotViewController.swift */; };
+		D0ED42C11E1351A4007A74EF /* UserUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED42C01E1351A4007A74EF /* UserUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		D0ED42B61E12687E007A74EF /* KKLLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLLiveCell.swift; sourceTree = "<group>"; };
 		D0ED42B71E12687E007A74EF /* KKLLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLLiveCell.xib; sourceTree = "<group>"; };
 		D0ED42BA1E12719F007A74EF /* KKLHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLHotViewController.swift; sourceTree = "<group>"; };
+		D0ED42C01E1351A4007A74EF /* UserUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		D049D9E01E09023400D102FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0ED42C01E1351A4007A74EF /* UserUtil.swift */,
 				D0B407A51E0FE278003BA232 /* KKLLive.swift */,
 				D0B407A71E0FE2AF003BA232 /* KKLCreator.swift */,
 			);
@@ -521,6 +524,7 @@
 				D0B407A01E0F952A003BA232 /* HttpTool.swift in Sources */,
 				D0B407A61E0FE278003BA232 /* KKLLive.swift in Sources */,
 				D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */,
+				D0ED42C11E1351A4007A74EF /* UserUtil.swift in Sources */,
 				D049D9FA1E0904BB00D102FD /* KKLTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,6 +50,7 @@ class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICo
         let count:NSInteger = NSInteger(self.collectionView.width / itemW)
         let countF:CGFloat = CGFloat(count)
         let cellW = (self.collectionView.width - itemMargin * (countF + 1))/countF
+        print(cellW)
         return CGSize.init(width: cellW, height: cellW + CGFloat(20))
     }
     

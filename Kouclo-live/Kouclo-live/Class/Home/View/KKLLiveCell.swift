@@ -22,7 +22,7 @@ class KKLLiveCell: UITableViewCell {
         didSet{
             self.nameLable.text = live?.creator?.nick
             self.locationLabel.text = live?.city
-            if let users = live?.onlineUsers{
+            if let users = live?.online_users{
                 self.onLineLabel.text = "\(users)"
             }else{
                 self.onLineLabel.text = "0"

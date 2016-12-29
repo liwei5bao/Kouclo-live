@@ -12,25 +12,29 @@ class KKLLive: NSObject {
 
     var city : String?
     var creator : KKLCreator?
-    var group : Int?
-    var id : String?
+    var group : NSNumber?
+    var ID : String?
     var image : String?
-    var link : Int?
-    var multi : Int?
+    var link : NSNumber?
+    var multi : NSNumber?
     var name : String?
-    var onlineUsers : Int?
-    var optimal : Int?
-    var pubStat : Int?
-    var roomId : Int?
-    var rotate : Int?
-    var shareAddr : String?
-    var slot : Int?
-    var status : Int?
-    var streamAddr : String?
-    var version : Int?
+    var online_users : NSNumber?
+    var optimal : NSNumber?
+    var pub_stat : NSNumber?
+    var room_id : NSNumber?
+    var rotate : NSNumber?
+    var share_addr : String?
+    var slot : NSNumber?
+    var status : NSNumber?
+    var stream_addr : String?
+    var version : NSNumber?
     
     var distance : String?
     
     ///是否已经加载过了
     var isShow : Bool = false
+    
+    override static func mj_replacedKeyFromPropertyName() -> [AnyHashable : Any]! {
+        return ["ID":"id"]
+    }
 }

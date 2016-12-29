@@ -24,7 +24,7 @@ class KKLHomeHandler: NSObject {
                 failure(json)
                 
             }else{
-                
+        
                 let lives = KKLLive.mj_objectArray(withKeyValuesArray: result["lives"])
                 if let lives = lives{
                     success(lives)

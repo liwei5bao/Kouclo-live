@@ -42,6 +42,11 @@ class KKLHotViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        let live = self.datalist[indexPath.row] as? KKLLive
+        let playVC = KKLPlayerViewController()
+        playVC.live = live
+        self.navigationController?.pushViewController(playVC, animated: true)
     }
     
     //初始化控件

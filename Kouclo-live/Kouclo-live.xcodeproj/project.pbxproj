@@ -55,7 +55,7 @@
 		D0F1C5331E14B0BD004D9278 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F1C5321E14B0BD004D9278 /* QuartzCore.framework */; };
 		D0F1C5351E14B0C5004D9278 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F1C5341E14B0C5004D9278 /* UIKit.framework */; };
 		D0F1C5371E14B0CD004D9278 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F1C5361E14B0CD004D9278 /* VideoToolbox.framework */; };
-		D0F1C5391E14B0F5004D9278 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F1C5381E14B0F5004D9278 /* IJKMediaFramework.framework */; };
+		D0F1C53F1E14B904004D9278 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F1C53E1E14B904004D9278 /* IJKMediaFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,7 +112,7 @@
 		D0F1C5321E14B0BD004D9278 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D0F1C5341E14B0C5004D9278 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D0F1C5361E14B0CD004D9278 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		D0F1C5381E14B0F5004D9278 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		D0F1C53E1E14B904004D9278 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 				D0F1C5371E14B0CD004D9278 /* VideoToolbox.framework in Frameworks */,
 				D0F1C5351E14B0C5004D9278 /* UIKit.framework in Frameworks */,
 				D0F1C5331E14B0BD004D9278 /* QuartzCore.framework in Frameworks */,
-				D0F1C5391E14B0F5004D9278 /* IJKMediaFramework.framework in Frameworks */,
+				D0F1C53F1E14B904004D9278 /* IJKMediaFramework.framework in Frameworks */,
 				D0F1C5311E14B0B1004D9278 /* OpenGLES.framework in Frameworks */,
 				D0F1C52F1E14B0A8004D9278 /* MobileCoreServices.framework in Frameworks */,
 				D0F1C52D1E14B091004D9278 /* MediaPlayer.framework in Frameworks */,
@@ -144,7 +144,7 @@
 		CB8704BC79372F737ABF6A2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0F1C5381E14B0F5004D9278 /* IJKMediaFramework.framework */,
+				D0F1C53E1E14B904004D9278 /* IJKMediaFramework.framework */,
 				D0F1C5361E14B0CD004D9278 /* VideoToolbox.framework */,
 				D0F1C5341E14B0C5004D9278 /* UIKit.framework */,
 				D0F1C5321E14B0BD004D9278 /* QuartzCore.framework */,

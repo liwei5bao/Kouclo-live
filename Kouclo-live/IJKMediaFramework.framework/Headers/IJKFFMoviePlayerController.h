@@ -89,7 +89,9 @@ typedef enum IJKLogLevel {
 + (void)setLogLevel:(IJKLogLevel)logLevel;
 + (BOOL)checkIfFFmpegVersionMatch:(BOOL)showAlert;
 + (BOOL)checkIfPlayerVersionMatch:(BOOL)showAlert
-                            version:(NSString *)version;
+                            major:(unsigned int)major
+                            minor:(unsigned int)minor
+                            micro:(unsigned int)micro;
 
 @property(nonatomic, readonly) CGFloat fpsInMeta;
 @property(nonatomic, readonly) CGFloat fpsAtOutput;

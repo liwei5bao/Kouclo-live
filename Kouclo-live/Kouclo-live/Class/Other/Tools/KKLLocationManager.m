@@ -57,6 +57,7 @@
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation {
     
+    self.location = newLocation;
     CLLocationCoordinate2D coor = newLocation.coordinate;
     
     NSString * lat = [NSString stringWithFormat:@"%@",@(coor.latitude)];
@@ -76,5 +77,7 @@
     self.block = block;
     [self.locManager startUpdatingLocation];
 }
+
+
 
 @end

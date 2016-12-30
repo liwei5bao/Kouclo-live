@@ -23,11 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
         
+        UIButton.appearance().isExclusiveTouch = true
+        //获取地理位置
         KKLLocationManager.shared().getGps { (lat, lon) in
             let userModel = UserUtil.getUserModel()
-            userModel.lat = lat?.description
-            userModel.lon = lon?.description
-            UserUtil.saveUserModel(userModel)
+            if let userModel = userModel{
+                userModel.lat = lat?.description
+                userModel.lon = lon?.description
+                UserUtil.saveUserModel(userModel)
+            }
         }
         
         return true

@@ -47,7 +47,7 @@ class KKLHomeHandler: NSObject {
         var params:NSDictionary?
         
         let userModel = UserUtil.getUserModel()
-        if let lat = userModel.lat,let lon = userModel.lon{
+        if let lat = userModel?.lat,let lon = userModel?.lon{
             params = ["uid":"85149891","latitude":lat,"longitude":lon]
         }else{
             params = ["uid":"85149891","latitude":"40.090562","longitude":"116.413353"]

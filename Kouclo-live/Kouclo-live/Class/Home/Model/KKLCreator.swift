@@ -11,7 +11,7 @@ import UIKit
 class KKLCreator: NSObject {
     
     var birth : String?
-    var description_field : String?
+    var desc : String?
     var emotion : String?
     var gender : NSNumber?
     var gmutex : NSNumber?
@@ -31,6 +31,6 @@ class KKLCreator: NSObject {
     var verified_reason : String?
     
     override static func mj_replacedKeyFromPropertyName() -> [AnyHashable : Any]! {
-        return ["ID":"id"]
+        return ["ID":"id","desc":"description"]
     }
 }

@@ -28,9 +28,15 @@ class KKLLiveCell: UITableViewCell {
                 self.onLineLabel.text = "0"
             }
             
-            let imageUrl = IMAGE_HOST + (live?.creator?.portrait)!
-            self.headView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
-            self.bigImageView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
+            if live?.creator?.nick == "MySelf"{
+                self.headView.image = UIImage.init(named: "akaliCosplay")
+                self.bigImageView.image = UIImage.init(named: "akaliCosplay")
+            }else{
+                let imageUrl = IMAGE_HOST + (live?.creator?.portrait)!
+                self.headView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
+                self.bigImageView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
+            }
+        
         }
     }
  

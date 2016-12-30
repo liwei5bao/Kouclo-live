@@ -23,4 +23,4 @@ let API_NearLive = "api/live/near_recommend"
 let API_Advertise = "advertise/get"
 
 //直播地址
-let Live_Dahuan = "rtmp://live.hkstv.hk.lxdns.com:1935/live/KoucloLive"
+let Live_KoucloLive = "rtmp://live.hkstv.hk.lxdns.com:1935/live/KoucloLive"

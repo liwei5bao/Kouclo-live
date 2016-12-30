@@ -10,6 +10,7 @@ import UIKit
 
 class KKLLive: NSObject {
 
+    var distance : String?
     var city : String?
     var creator : KKLCreator?
     var group : NSNumber?
@@ -28,8 +29,7 @@ class KKLLive: NSObject {
     var status : NSNumber?
     var stream_addr : String?
     var version : NSNumber?
-    
-    var distance : String?
+
     
     ///是否已经加载过了
     var isShow : Bool = false

@@ -13,7 +13,7 @@ class KKLFocuseViewController: UITableViewController {
     //
     private var identifier = "KKLLiveCell"
     ///模型数组
-    var datalist:NSArray = NSArray()
+    var datalist:NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,11 @@ class KKLFocuseViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        let live = self.datalist[indexPath.row] as? KKLLive
+        let playVC = KKLPlayerViewController()
+        playVC.live = live
+        self.navigationController?.pushViewController(playVC, animated: true)
     }
     
     //初始化控件
@@ -56,12 +61,26 @@ class KKLFocuseViewController: UITableViewController {
         weak var wSelf = self
         KKLHomeHandler.executeGetHotLiveTaskWithSuccess(success: { (result) in
             
-            wSelf?.datalist = result as! NSArray
+            wSelf?.datalist = result as! NSMutableArray
             wSelf?.tableView.reloadData()
+            let liveM = KKLLive()
+            liveM.city = "北京"
+            liveM.online_users = NSNumber.init(value: 100);
+            liveM.stream_addr = Live_KoucloLive
+            
+            let creator = KKLCreator()
+            liveM.creator = creator
+            
+            creator.nick = "MySelf"
+            creator.portrait = "live"
+            wSelf?.datalist.insert(liveM, at: 0)
+            
+            wSelf?.tableView.reloadData()
+
         }) { (error) in
             print(error)
         }
-        
+    
     }
 
 }

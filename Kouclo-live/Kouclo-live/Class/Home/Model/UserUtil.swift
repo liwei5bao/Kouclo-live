@@ -20,7 +20,7 @@ class UserUtil: NSObject {
     }
     
     ///取出用户的信息
-    class func getUserModel()->UserModel{
+    class func getUserModel()->UserModel?{
         var model:UserModel?
         let defaults = UserDefaults.standard
         let data = defaults.object(forKey: "UserModel") as? Data
@@ -30,10 +30,10 @@ class UserUtil: NSObject {
             if (model != nil) {
                 return model!
             }else{
-                return UserModel()
+                return nil
             }
         }else{
-            return UserModel()
+            return nil
         }
     }
     

@@ -54,6 +54,16 @@ class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICo
         return CGSize.init(width: cellW, height: cellW + CGFloat(20))
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let live = self.datalist[indexPath.row] as? KKLLive
+        let playVC = KKLPlayerViewController()
+        playVC.live = live
+        self.navigationController?.pushViewController(playVC, animated: true)
+    }
+    
+    
     //初始化控件
     private func setupUI(){
         self.collectionView.register(UINib.init(nibName: "KKLNearLiveCell", bundle: nil), forCellWithReuseIdentifier: identifier)

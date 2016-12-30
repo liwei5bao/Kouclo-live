@@ -29,7 +29,7 @@ extension UIColor{
     }
     
     // MARK:------------- 颜色设置
-    class func colorWithHexString (_ hex:String) -> UIColor {
+    class func colorWithHexStrings (_ hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).uppercased()
         
         if (cString.hasPrefix("#")) {

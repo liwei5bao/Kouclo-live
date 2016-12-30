@@ -70,7 +70,7 @@ class KKLTabBarViewController: UITabBarController {
     }
     
     func cameraButtonClick(){
-        print("来了")
+        self.present(KKLMyLiveViewController(), animated: true) {}
     }
     
 }

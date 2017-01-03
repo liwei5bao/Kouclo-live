@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		33C7906875D3957AF2820BF4 /* Pods_Kouclo_live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD54236D284B74024D4556A /* Pods_Kouclo_live.framework */; };
+		D0036F571E1B913300872012 /* KKLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036F551E1B913300872012 /* KKLLoginViewController.swift */; };
+		D0036F581E1B913300872012 /* KKLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0036F561E1B913300872012 /* KKLLoginViewController.xib */; };
 		D00C2C5D1E16051B00293E82 /* KKLMyLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00C2C5B1E16051B00293E82 /* KKLMyLiveViewController.swift */; };
 		D00C2C5E1E16051B00293E82 /* KKLMyLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00C2C5C1E16051B00293E82 /* KKLMyLiveViewController.xib */; };
 		D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049D9DD1E09023400D102FD /* AppDelegate.swift */; };
@@ -67,6 +69,8 @@
 		30FF56A66609E79D52BE7450 /* Pods-Kouclo-live.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kouclo-live.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kouclo-live/Pods-Kouclo-live.debug.xcconfig"; sourceTree = "<group>"; };
 		6052057CF815B80401D215CE /* Pods-Kouclo-live.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kouclo-live.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kouclo-live/Pods-Kouclo-live.release.xcconfig"; sourceTree = "<group>"; };
 		ACD54236D284B74024D4556A /* Pods_Kouclo_live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kouclo_live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0036F551E1B913300872012 /* KKLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLLoginViewController.swift; sourceTree = "<group>"; };
+		D0036F561E1B913300872012 /* KKLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLLoginViewController.xib; sourceTree = "<group>"; };
 		D00C2C5B1E16051B00293E82 /* KKLMyLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLMyLiveViewController.swift; sourceTree = "<group>"; };
 		D00C2C5C1E16051B00293E82 /* KKLMyLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLMyLiveViewController.xib; sourceTree = "<group>"; };
 		D049D9DD1E09023400D102FD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 			children = (
 				D049DA121E090AE800D102FD /* KKLMeViewController.swift */,
 				D049DA131E090AE800D102FD /* KKLMeViewController.xib */,
+				D0036F551E1B913300872012 /* KKLLoginViewController.swift */,
+				D0036F561E1B913300872012 /* KKLLoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -508,6 +514,7 @@
 				D0ED42B11E10FDB6007A74EF /* KKLNearLiveCell.xib in Resources */,
 				D0B407981E0E611C003BA232 /* KKLNearViewController.xib in Resources */,
 				D049D9F31E09023400D102FD /* Info.plist in Resources */,
+				D0036F581E1B913300872012 /* KKLLoginViewController.xib in Resources */,
 				D0F1C5451E14F77A004D9278 /* KKLLiveViewController.xib in Resources */,
 				D049DA111E090ABE00D102FD /* KKLHomeViewController.xib in Resources */,
 				D049D9F21E09023400D102FD /* Assets.xcassets in Resources */,
@@ -584,6 +591,7 @@
 				D0B407A21E0FD7EE003BA232 /* KKLApiConfig.swift in Sources */,
 				D0F1C5411E14F73C004D9278 /* KKLPlayerViewController.swift in Sources */,
 				D049D9F11E09023400D102FD /* AppDelegate.swift in Sources */,
+				D0036F571E1B913300872012 /* KKLLoginViewController.swift in Sources */,
 				D0ED42BC1E12719F007A74EF /* KKLHotViewController.swift in Sources */,
 				D0B4079A1E0E62C5003BA232 /* KKLHomeTopView.swift in Sources */,
 				D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */,

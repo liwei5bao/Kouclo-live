@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KKLLiveViewController" customModule="Kouclo_live" customModuleProvider="target">
             <connections>
+                <outlet property="iconView" destination="VyC-ad-Tma" id="2ow-dh-A5f"/>
+                <outlet property="peopleCountL" destination="0oc-0D-Np1" id="bSg-2B-egb"/>
+                <outlet property="shareButton" destination="uUo-eR-LxJ" id="aNV-so-xNg"/>
                 <outlet property="view" destination="nsc-Kr-EpK" id="dDs-5A-0Sn"/>
             </connections>
         </placeholder>
@@ -58,9 +61,8 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-0D-Np1">
-                    <rect key="frame" x="43" y="48" width="35" height="12"/>
+                    <rect key="frame" x="43" y="48" width="31" height="12"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="35" id="lOe-CT-7td"/>
                         <constraint firstAttribute="height" constant="12" id="nhb-1W-L8H"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -74,7 +76,7 @@
                         <constraint firstAttribute="height" constant="20" id="KBd-ap-590"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="映票 0" backgroundImage="mg_room_映票_底">
+                    <state key="normal" title="映票 8888" backgroundImage="mg_room_映票_底">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>

@@ -10,15 +10,18 @@ import UIKit
 
 class KKLMeViewController: KKLBaseViewController {
 
+    @IBAction func loginBtnClick(_ sender: UIButton) {
+        
+        let vc = KKLLoginViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.white
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.title = "我"
     }
     
 }

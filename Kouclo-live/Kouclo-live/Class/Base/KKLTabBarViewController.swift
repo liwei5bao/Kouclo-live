@@ -72,5 +72,19 @@ class KKLTabBarViewController: UITabBarController {
     func cameraButtonClick(){
         self.present(KKLMyLiveViewController(), animated: true) {}
     }
+ 
+    // 禁止横屏  在iPad上会旋转
+    override var shouldAutorotate: Bool{
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
+        return UIInterfaceOrientation.portrait
+    }
     
 }

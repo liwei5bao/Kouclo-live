@@ -1,2 +1,2 @@
 # Kouclo-live
-直播项目，使用Bilibili/ijkplayer做拉流直播，使用LFLiveKit做推流直播，登录方式友盟第三方登录
+直播项目，使用swift3.0和Xcode8.2完成项目，简单实现拉取视频和直播视频功能的小项目

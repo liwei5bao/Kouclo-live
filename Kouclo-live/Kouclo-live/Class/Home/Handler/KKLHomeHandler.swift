@@ -17,14 +17,14 @@ class KKLHomeHandler: NSObject {
     ///获取最热的直播
     class func executeGetHotLiveTaskWithSuccess(success:@escaping SuccessBlock,failure:@escaping FailedBlock){
         
-        HttpTool.getWithPath(path: API_HotLive, params: nil, success: { (json) in
-            let result = json as! NSDictionary
+        AFHttpClient.sharedClient.get(API_HotLive, parameters: nil, progress: nil, success: { (task, responseObject) in
+            let result = responseObject as! NSDictionary
             if((result["dm_error"] as? NSInteger) != 0){
                 
-                failure(json)
+                failure(responseObject)
                 
             }else{
-        
+                
                 let lives = KKLLive.mj_objectArray(withKeyValuesArray: result["lives"])
                 if let lives = lives{
                     success(lives)
@@ -33,12 +33,10 @@ class KKLHomeHandler: NSObject {
                 }
                 
             }
-            
-        }) { (error) in
-            
-            failure(error)
+
+        }) { (task, error) in
+            failure(error as NSError)
         }
-        
     }
     
     ///获取附近的直播

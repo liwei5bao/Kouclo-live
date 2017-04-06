@@ -29,7 +29,7 @@ class KKLLive: NSObject {
     var status : NSNumber?
     var stream_addr : String?
     var version : NSNumber?
-
+    var portrait : String?
     
     ///是否已经加载过了
     var isShow : Bool = false

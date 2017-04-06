@@ -32,11 +32,12 @@ class KKLLiveCell: UITableViewCell {
                 self.headView.image = UIImage.init(named: "akaliCosplay")
                 self.bigImageView.image = UIImage.init(named: "akaliCosplay")
             }else{
-                let imageUrl = IMAGE_HOST + (live?.creator?.portrait)!
-                self.headView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
-                self.bigImageView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
+                let imageUrl = (live?.creator?.portrait)
+                if let imageUrl = imageUrl{
+                    self.headView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
+                    self.bigImageView.downloadImage(url: imageUrl, placeholderImageName: KKLPlaceholderImageName)
+                }
             }
-        
         }
     }
  

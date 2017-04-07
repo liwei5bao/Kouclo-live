@@ -7,3 +7,8 @@
 * home模块使用自定义tab选项卡,分为关注、热门、附近几个界面包括tableView、collectionView的基本使用
 * 使用Bilibili/ijkplayer做拉流播放视频，使用LFLiveKit做推流直播
 ### 展示界面
+![](https://github.com/liwei5bao/READMEImages/blob/master/Live/Live0.jpg)
+![](https://github.com/liwei5bao/READMEImages/blob/master/Live/Live1.jpg)
+![](https://github.com/liwei5bao/READMEImages/blob/master/Live/Live2.jpg)
+![](https://github.com/liwei5bao/READMEImages/blob/master/Live/Live3.jpg)
+![](https://github.com/liwei5bao/READMEImages/blob/master/Live/Live4.jpg)

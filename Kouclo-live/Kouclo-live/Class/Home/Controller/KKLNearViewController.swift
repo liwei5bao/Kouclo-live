@@ -7,6 +7,7 @@
 //  首页附近的人控制器
 
 import UIKit
+import SDWebImage
 
 class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
@@ -14,7 +15,7 @@ class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICo
     ///模型数组
     var datalist:NSArray = NSArray()
     
-    ///
+    ///KKLNearLiveCell
     private var identifier = "KKLNearLiveCell"
     ///itemW
     private let itemW:CGFloat = 100
@@ -26,7 +27,7 @@ class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICo
         self.loadData()
     }
     
-    ///cell将要显示调用
+    //cell将要显示调用
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         let c = cell as! KKLNearLiveCell
@@ -50,7 +51,7 @@ class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICo
         let count:NSInteger = NSInteger(self.collectionView.width / itemW)
         let countF:CGFloat = CGFloat(count)
         let cellW = (self.collectionView.width - itemMargin * (countF + 1))/countF
-        print(cellW)
+        
         return CGSize.init(width: cellW, height: cellW + CGFloat(20))
     }
     
@@ -63,7 +64,10 @@ class KKLNearViewController: KKLBaseViewController,UICollectionViewDelegate,UICo
         self.navigationController?.pushViewController(playVC, animated: true)
     }
     
-    
+    //清除图片缓存
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        SDImageCache.shared().clearMemory()
+    }
     //初始化控件
     private func setupUI(){
         self.collectionView.register(UINib.init(nibName: "KKLNearLiveCell", bundle: nil), forCellWithReuseIdentifier: identifier)

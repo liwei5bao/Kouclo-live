@@ -22,6 +22,7 @@ class KKLMeViewController: KKLBaseViewController {
 
         self.view.backgroundColor = UIColor.white
         self.title = "我"
+        self.tabBarItem.title = ""
     }
     
 }

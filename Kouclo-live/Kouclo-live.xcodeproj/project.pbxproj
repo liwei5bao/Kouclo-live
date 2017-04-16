@@ -28,6 +28,7 @@
 		D049DA141E090AE800D102FD /* KKLMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA121E090AE800D102FD /* KKLMeViewController.swift */; };
 		D049DA151E090AE800D102FD /* KKLMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D049DA131E090AE800D102FD /* KKLMeViewController.xib */; };
 		D049DA171E090E6700D102FD /* KKLBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */; };
+		D06502CC1EA21A8F0039207A /* KKLBarrageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06502CB1EA21A8F0039207A /* KKLBarrageView.swift */; };
 		D086DE751E1610C900811A3E /* KKLMyLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086DE741E1610C900811A3E /* KKLMyLiveView.swift */; };
 		D0B407921E0E6100003BA232 /* KKLFocuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */; };
 		D0B407971E0E611C003BA232 /* KKLNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B407951E0E611C003BA232 /* KKLNearViewController.swift */; };
@@ -90,6 +91,7 @@
 		D049DA121E090AE800D102FD /* KKLMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLMeViewController.swift; sourceTree = "<group>"; };
 		D049DA131E090AE800D102FD /* KKLMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKLMeViewController.xib; sourceTree = "<group>"; };
 		D049DA161E090E6700D102FD /* KKLBaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLBaseNavViewController.swift; sourceTree = "<group>"; };
+		D06502CB1EA21A8F0039207A /* KKLBarrageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLBarrageView.swift; sourceTree = "<group>"; };
 		D077B55F1E077E79009272B8 /* Kouclo-live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kouclo-live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D086DE741E1610C900811A3E /* KKLMyLiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLMyLiveView.swift; sourceTree = "<group>"; };
 		D0B407911E0E6100003BA232 /* KKLFocuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKLFocuseViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				D0ED42B61E12687E007A74EF /* KKLLiveCell.swift */,
 				D0ED42B71E12687E007A74EF /* KKLLiveCell.xib */,
 				D086DE741E1610C900811A3E /* KKLMyLiveView.swift */,
+				D06502CB1EA21A8F0039207A /* KKLBarrageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06502CC1EA21A8F0039207A /* KKLBarrageView.swift in Sources */,
 				D049DA0D1E090A7B00D102FD /* KKLBaseViewController.swift in Sources */,
 				D0B407A81E0FE2AF003BA232 /* KKLCreator.swift in Sources */,
 				D049DA051E0905A500D102FD /* UIImageView+Extension.swift in Sources */,

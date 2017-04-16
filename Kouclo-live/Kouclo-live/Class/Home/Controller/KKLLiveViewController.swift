@@ -15,7 +15,8 @@ class KKLLiveViewController: UIViewController {
     @IBOutlet weak var shareButton: UIImageView!
     
     var timer:Timer?
-    
+    ///弹幕的View
+    var barrageView:KKLBarrageView?
     ///模型
     var live:KKLLive?{
         didSet{
@@ -35,6 +36,11 @@ class KKLLiveViewController: UIViewController {
         self.iconView.layer.cornerRadius = 15
         self.iconView.layer.masksToBounds = true
     
+        
+        //添加弹幕的View
+        let barrageView = KKLBarrageView.init(frame: CGRect.init(x: 0, y: 100, width: KKLScreenWidth, height: 150))
+        self.view.addSubview(barrageView)
+        self.barrageView = barrageView
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,5 +94,15 @@ class KKLLiveViewController: UIViewController {
         super.viewWillDisappear(animated)
         timer?.invalidate()
         timer = nil
+        
+        barrageView?.timer?.invalidate()
+        barrageView?.timer = nil
+        
+        
+        self.barrageView?.removeFromSuperview()
+    }
+    
+    deinit {
+        print("释放")
     }
 }

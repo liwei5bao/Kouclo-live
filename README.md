@@ -6,6 +6,7 @@
 * 封装了网络框架和图片（SDWebImage）下载
 * home模块使用自定义tab选项卡,分为关注、热门、附近几个界面包括tableView、collectionView的基本使用
 * 使用Bilibili/ijkplayer做拉流播放视频，使用LFLiveKit做推流直播
+* 模拟直播界面弹幕功能
 ### 展示界面
 ![](https://github.com/liwei5bao/READMEImages/blob/master/Live/Live0.jpg)
 ![](https://github.com/liwei5bao/READMEImages/blob/master/Live/Live1.jpg)

@@ -7,7 +7,7 @@
 //  视频播放界面
 
 import UIKit
-
+import YYKit
 class KKLLiveViewController: UIViewController {
 
     @IBOutlet weak var iconView: UIImageView!
@@ -36,18 +36,13 @@ class KKLLiveViewController: UIViewController {
         self.iconView.layer.cornerRadius = 15
         self.iconView.layer.masksToBounds = true
     
-        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: YYWeakProxy.init(target: self), selector: #selector(KKLLiveViewController.loveAnimate), userInfo: nil, repeats: true)
         //添加弹幕的View
         let barrageView = KKLBarrageView.init(frame: CGRect.init(x: 0, y: 100, width: KKLScreenWidth, height: 150))
         self.view.addSubview(barrageView)
         self.barrageView = barrageView
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(KKLLiveViewController.loveAnimate), userInfo: nil, repeats: true)
-    }
-  
     func loveAnimate() {
         self.showLoveAnimate(fromView: self.shareButton, addToView: self.view)
     }
@@ -90,19 +85,13 @@ class KKLLiveViewController: UIViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    deinit {
         timer?.invalidate()
         timer = nil
         
         barrageView?.timer?.invalidate()
         barrageView?.timer = nil
-        
-        
         self.barrageView?.removeFromSuperview()
-    }
-    
-    deinit {
         print("释放")
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import YYKit
 enum BarrageType {
     case Start
     case FullAccess
@@ -32,7 +32,7 @@ class KKLBarrageView: UIView {
     private func setup(){
         //添加数据
         self.dataSouse()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(KKLBarrageView.barrageLableAnimate), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: YYWeakProxy.init(target: self), selector: #selector(KKLBarrageView.barrageLableAnimate), userInfo: nil, repeats: true)
     }
     
     //添加到view上边一个弹幕
@@ -50,7 +50,7 @@ class KKLBarrageView: UIView {
         if (barrageStrArray.count == 0) {
             isUseTimeAddAnimate = true
             
-            ///模拟添加数据不让弹幕中指
+            ///模拟添加数据不让弹幕终止  此处应该是网络请求回来添加的数据
             self.dataSouse()
             return
         }
@@ -60,7 +60,7 @@ class KKLBarrageView: UIView {
             self.createLable(contentStr: firstStr) { (type,lable) in
                 switch type{
                 case .FullAccess://完全进入
-                    //主线程更新UI
+                    //主线程更新UI 若不在主线UI控件不在屏幕上渲染
                     DispatchQueue.main.async {
                         wSelf?.showBarrageLableAnimate()
                     }
@@ -116,7 +116,7 @@ class KKLBarrageView: UIView {
         UIView.animate(withDuration: TimeInterval(moveT)) {
             barrageLable.left = -barrageLable.width
         }
-    
+        
     }
 
     private let souseArray:[String] = ["主播你好靓啊~~~~~( ⊙ o ⊙ )啊！","主播唱首歌吧你唱歌好听吗","主播怎么不说话~~~","没意思~~~","主播你好靓啊~~~~~( ⊙ o ⊙ )啊！","主播唱首歌吧你唱歌好听吗","主播怎么不说话~~~","没意思~~~","主播你好靓啊~~~~~( ⊙ o ⊙ )啊！","主播唱首歌吧你唱歌好听吗","主播怎么不说话~~~","没意思~~~","主播你好靓啊~~~~~( ⊙ o ⊙ )啊！","主播唱首歌吧你唱歌好听吗","主播怎么不说话~~~","没意思~~~"]
